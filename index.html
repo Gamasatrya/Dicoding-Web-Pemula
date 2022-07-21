@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Web Gama</title>
+</head>
+<body>
+    
+    <header>
+		<div class="container">
+			<h1><a href="#">Dicoding</a></h1>
+			<ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <a href="#aku">Aku</a>
+                    <a href="#kamu">Kamu</a>
+                    <a href="#kita">Kita</a>
+                    </div>
+                </div>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Contact Me</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+<!-- konten -->
+<div class="konten">
+    <div class="container">
+        <div class="box">
+            <main>
+                <h1>Pendidikan</h1>
+                <br>
+                <article>
+                    Gunadarma adalah sebuah kampus yang berada di depok.
+                Saya adalah mahasiswa Gunadarma, saya memilih jurusan Sistem Informasi. Saya angkatan 2019. Pendidikan saya dari sd sampai kuliah saat ini berada di daerah depok.</article>
+            </main>
+        </div>
+    </div>
+</div>
+<div class="konten">
+    <div class="container">
+        <div class="box">
+            <main>
+                <h1>About Me</h1>
+                <br>
+                <article> Saya lahir di depok, dan besar di depok. saya menyukai dicoding karena dicoding sangat bermanfaat. saya ingin mempelajari skill coding dari program dicoding ini. Saya mempunyai hobby yaitu olahraga. seperti futsal, bola, bulutangkis, dan berenang. saya menyukai banyak makanan, terutama makanan Rumah Padang.</article>
+            </main>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="box">
+        <aside>
+            <img src="/img/gamakotak.jpeg" alt="" width="320px">
+            <h1>Biodata</h1>
+            <p>Nama : Gama Satrya</p>
+            <p>Hobi : Olahraga</p>
+            <p>Bintang : Scorpio</p>
+            <p>Kampus : Gunadarma</p>
+            <p>Jurusan : Sistem Informasi</p>
+        </aside>
+    </div>  
+</div>
+
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <h5>footer</h5>
+            <h4>Ig : Gama_satrya</h4>
+            <h4>Email : Gamasatrya@gmail.com</h4>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
